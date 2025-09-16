@@ -1,0 +1,11 @@
+const express=require('express');
+const router=express.Router();
+const OrderController=require('../controllers/OrderController');
+router.get('/',OrderController.landingPage);
+router.post('/orders',OrderController.insertOrder);
+router.get('/fetchProduct',OrderController.fetchProduct);
+router.get('/orders',OrderController.fetchOrders);
+router.delete('/orders/:id',OrderController.deleteOrder);
+router.get('/orders/:id',OrderController.fetchOrderById);
+router.put('/orders',OrderController.updateOrder);
+module.exports=router;
