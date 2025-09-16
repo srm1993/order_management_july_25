@@ -1,6 +1,6 @@
 const express=require('express');
 const router=express.Router();
-const OrderController=require('../controllers/OrderController');
+const OrderController=require('../controllers/OrderController.js');
 router.get('/',OrderController.landingPage);
 router.post('/orders',OrderController.insertOrder);
 router.get('/fetchProduct',OrderController.fetchProduct);
