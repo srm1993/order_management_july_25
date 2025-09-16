@@ -1,5 +1,5 @@
-const OrderMaster = require('../models/Order_Master');
-const ProductMaster = require('../models/product_master');
+const OrderMaster = require('../models/Order_Master.js');
+const ProductMaster = require('../models/product_master.js');
 exports.landingPage = (req, res) => {
     res.render('index');
 }
